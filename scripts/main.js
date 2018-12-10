@@ -1,4 +1,12 @@
-console.log(1);
-let audio = document.getElementsByTagName("audio")[0];
-audio.play();
-audio.addEventListener('ended', () => audio.play());
+let audios = document.getElementsByTagName("audio");
+let len = audios.length;
+for (let i = 0; i < len; i++) {
+    audios[i].addEventListener('ended', () => {
+        if (i + 1 < len) {
+            audios[i + 1].play();
+        } else {
+            audios[0].play();
+        }
+    });
+}
+audios[0].play();
