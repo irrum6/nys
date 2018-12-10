@@ -1,0 +1,19 @@
+{
+  "name": "localserver",
+  "version": "0.0.1",
+  "description": "to test locally some static pages",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "test",
+    "local"
+  ],
+  "author": "irakli",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

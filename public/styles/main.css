@@ -1,0 +1,20 @@
+#tree {
+    display: flex;
+    justify-content: space-around;
+}
+
+#play {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    font-size: 3rem;
+    padding-top: 5px 10px 5px 10px;
+    color: limegreen;
+    justify-content: space-around;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    outline: none;
+}
