@@ -18,3 +18,55 @@ button {
     border: none;
     outline: none;
 }
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+div.counter {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10vmin;
+    border: none;
+    border-radius: 10%;
+    text-align: center;
+    color: white;
+    background: darkslategrey;
+    font-size: 22px;
+    padding: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+    font-weight:900;
+}
+
+div.counter:after {
+    display: flex;
+    content: '';
+    height: 100%
+}
+
+#dd:after, #hh:after, #mm:after, #ss:after {
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    font-weight:normal;
+    text-align: center;
+}
+
+#dd:after {
+    content: 'დღე';
+}
+
+#hh:after {
+    content: 'საათი'
+}
+
+#mm:after {
+    content: 'წუთი'
+}
+
+#ss:after {
+    content: 'წამი'
+}
