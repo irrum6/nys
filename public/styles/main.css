@@ -3,19 +3,31 @@
     justify-content: space-around;
 }
 
-#play {
+.play {
     display: flex;
-    justify-content: space-around;
+    background-color: #609030;
+    border: none;
+    border-radius: 25%;
+    padding: 0.4rem 0.8rem;
 }
 
-button {
-    font-size: 3rem;
-    padding: 5px 10px 5px 10px;
-    color: #40ff80;
-    justify-content: space-around;
-    text-transform: capitalize;
+button.go {
+    width: 3rem;
+    height: 3rem;
+    border-style: solid;
+    border-width: 1.5rem 0rem 1.5rem 3rem;
+    border-color: transparent transparent transparent #202020;
     background: none;
-    border: none;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+button.pause {
+    border-style: double;
+    border-width: 0rem 0rem 0rem 2rem;
+    border-color: #202020;
+    background: none;
     outline: none;
 }
 
@@ -38,20 +50,14 @@ div.counter {
     padding: 6px;
     font-family: 'Courier New', Courier, monospace;
     margin-left: 10px;
-    font-weight:900;
-}
-
-div.counter:after {
-    display: flex;
-    content: '';
-    height: 100%
+    font-weight: 900;
 }
 
 #dd:after, #hh:after, #mm:after, #ss:after {
     display: flex;
     font-size: 14px;
     width: 100%;
-    font-weight:normal;
+    font-weight: normal;
     text-align: center;
 }
 
