@@ -1,6 +1,12 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 #tree {
     display: flex;
     justify-content: space-around;
+    padding-top: 20vh;
 }
 
 .play {
@@ -37,6 +43,17 @@ button.pause {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    z-index: 2;
+}
+
+#navbar.absolute {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 2;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 div.counter {
